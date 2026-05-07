@@ -8,5 +8,5 @@ echo -n "Message > "
 read MESSAGE
 echo -n "PHP url > "
 read URL
-curl --data "from=$SENDER&to=RECIPIENT&subject=SUBJECT&message=MESSAGE" $URL
+curl --data "from=$SENDER&to=$RECIPIENT&subject=$SUBJECT&message=$MESSAGE" $URL
 echo "Done."
